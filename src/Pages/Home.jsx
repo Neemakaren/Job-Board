@@ -13,19 +13,20 @@ import Agency from '../components/Agency'
 import Footer from '../components/Footer'
 
 
-const Home = () => {
+const Home = ({categories, filterItems, jobs}) => {
+  
   return (
     <>
-   <Navbar />
    {/* <Hero /> */}
+   <Navbar />
    <Hero2 />
    <Search />
-   <Jobs />
+   {/* <Jobs categories={categories} filterItems={filterItems} jobs={jobs} /> */}
    <Banner />
-   <Featured />
+   <Featured/>
    <JobFind />
    <Blog />
-   <Testimonials />
+   <Testimonials/>
    <Agency />
    <Footer />
    {/* <Here /> */}

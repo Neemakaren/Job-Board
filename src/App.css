@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: Montserrat;
+}
+
 .hamburger {
   cursor: pointer;
   width: 24px;
@@ -49,7 +55,7 @@
 }
 
 .here {
-  background-image: url(./assets/Job-Board-Images/job-2.jpg);
+  background-image: url(./assets/Job-Board-Images/key1.jpg);
   /* border: 2px solid red; */
 }
 
@@ -59,21 +65,22 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  background-color: rgb(21, 20, 20);
+  /* background-color: #343232; */
+  background-color: #efeaea;
   padding: 50px;
   max-width: 50%;
   margin: 0 150px;
+}
+
+.blog {
+  background-image: url(./assets/Job-Board-Images/jobline-blog-12.jpg);
 }
 
 .c {
   padding: 30px;
 }
 
-.s {
-  max-width: 1280px;
-  margin: 0 auto;
-  /* border: 2px solid red; */
-}
+
 
 .b {
   background-color: #55A747;
@@ -89,8 +96,8 @@
 }
 
 .m {
-  flex: 1;
-  /* border: 2px solid green; */
+  /* flex: 1; */
+  /* border: 5px solid green; */
 }
 
 .a {
@@ -99,14 +106,18 @@
   width: 30%;
 }
 
-.i {
-  width: 50px;
+.f {
+  z-index: 10;
 }
 
-.j {
+/* .i {
+  width: 50px;
+} */
+
+/* .j {
   display: flex;
   
-}
+} */
 
 .lifestyle {
   /* overflow: hidden; */
@@ -170,5 +181,40 @@ a {
 
 .g {
   font-size: 20px;
+}
+
+.prev-btn,
+.next-btn {
+  color: #55A747;
+  font-size: 1.25rem;
+  background: transparent;
+  border-color: transparent;
+  margin: 0 0.5rem;
+  transition: all 0.3s linear;
+  /* cursor: pointer; */
+}
+.prev-btn:hover,
+.next-btn:hover {
+  color: hsl(205, 78%, 60%);
+}
+.random-btn {
+  margin-top: 0.5rem;
+  background: hsl(210, 36%, 96%);
+  color: #55A747;
+  padding: 0.25rem 0.5rem;
+  text-transform: capitalize;
+  border-radius:  0.25rem;
+  transition: all 0.3s linear;
+  border-color: transparent;
+  
+}
+.random-btn:hover {
+  background: hsl(210, 22%, 49%);
+  color: hsl(205, 86%, 17%);
+}
+
+.convo {
+  border: 5px solid red;
+  /* width: 1280px; */
 }
 

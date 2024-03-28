@@ -14,3 +14,169 @@
   background-color: black;
   color: white
 }
+
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.logo-cont {
+max-width: 6em;
+align-items: center;
+margin-left: 1em; 
+}
+
+.logo {
+width: 100%;
+}
+
+.list1 {
+/* margin: 0 1rem; */
+color: gray;
+text-decoration: none;
+}
+
+.nav-toggle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: hsl(210, 22%, 49%);
+  background: transparent;
+  border-color: transparent;
+  transition: all 0.3s linear;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  visibility: hidden;
+}
+
+.nav-toggle:hover {
+color: hsl(205, 86%, 17%);
+}
+
+.list-main {
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 3em;
+list-style-type: none;
+font-size: 1.1em;
+font-style: italic;
+}
+
+.list1{
+cursor: pointer;
+}
+
+.list1:hover {
+color: rgb(252,219,90);
+}
+
+.fonts {
+display: flex;
+align-items: center;
+justify-content: center;
+padding-left: 5em;
+padding-top: 1.2em;
+}
+
+.fon1 {
+font-size: 1em;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+
+.nav-content {
+display: flex;
+align-items: center;
+justify-content: space-between;
+font-size: 1.3em;
+}
+
+
+
+
+@media only screen and (max-width: 1024px) {
+.nav-toggle {
+  visibility: visible;
+  opacity: 1;
+}
+
+.nav-content {
+  position: fixed;
+  top: -100vh;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  background-color: rgb(252,219,90);
+  transition: 1s;
+  position: absolute;
+  z-index: 1;
+  color: #423f3f;
+  
+}
+
+.responsive_nav {
+  transform: translateY(100vh);
+}
+
+.nav-content .nav-close-btn {
+  position: absolute;  
+  top: 2rem;
+  right: 2rem;
+}
+
+.list-main {
+  font-size: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-cont {
+  padding: 0;
+}
+
+/* .list-main {
+  display: flex;
+} */
+.list1 {
+  font-size: 1.2rem;
+}
+.list1:hover {
+  padding: 0;
+  background: transparent;
+}
+.fonts {
+  display: flex;
+  font-size: 1.5rem;
+  padding-left: .2em;
+}
+.fonts a {
+  margin: 0 0.5rem;
+  color: hsl(210, 22%, 49%);
+  transition: all 0.3s linear;
+}
+.fonts:hover {
+  color: hsl(211, 27%, 70%);
+} 
+}
