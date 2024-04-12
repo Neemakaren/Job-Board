@@ -9,6 +9,47 @@ import {
       Facebook,
       CodeWave,
     } from "../assets";
+
+import { blog1, blog2, blog3, blog4, blog5, blog6, blog7, blog8, blog9, blog10, blog11,blog12, blog14, blog15,img1, img2, img3 } from "../assets/Job-Board-Images";
+
+export const labels = [
+  {imgUrl: blog1},
+  {imgUrl: blog2},
+  {imgUrl: blog3},
+  {imgUrl: blog4},
+  {imgUrl: blog5},
+  {imgUrl: blog6},
+  {imgUrl: blog7},
+  {imgUrl: blog8},
+  {imgUrl: blog9},
+  {imgUrl: blog10},
+  {imgUrl: blog11},
+  {imgUrl: blog12},
+  {imgUrl: blog14},
+  {imgUrl: blog15},
+
+]
+
+export const blog = [
+  {
+    id: '1',
+    about:
+      "It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    profileUrl: img1,
+  },
+  {
+    id: '2',
+    about:
+      "It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    profileUrl: img2,
+  },
+  {
+    id: '3',
+    about:
+      "It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+    profileUrl: img3,
+  },
+]
     
 
 // export const companies = [
@@ -204,6 +245,10 @@ export const companies = [
 
 
 
+
+
+
+
   
   export const jobs = [
     {
@@ -260,7 +305,7 @@ export const companies = [
         },
       ],
       applicants: ["1", "2", "3", "4"],
-      vacancies: 25,
+      vacancies: 2,
       createdAt: new Date(),
       verified: false
     },
@@ -289,7 +334,7 @@ export const companies = [
         },
       ],
       applicants: ["1", "2", "3", "4"],
-      vacancies: 25,
+      vacancies: 16,
       createdAt: new Date(),
       verified: true
     },
@@ -318,7 +363,7 @@ export const companies = [
         },
       ],
       applicants: ["1", "2", "3", "4"],
-      vacancies: 25,
+      vacancies: 20,
       createdAt: new Date(),
       verified: true
     },
@@ -347,7 +392,7 @@ export const companies = [
         },
       ],
       applicants: ["1", "2", "3", "4"],
-      vacancies: 25,
+      vacancies: 26,
       createdAt: new Date(),
       verified: false
     },
@@ -376,7 +421,7 @@ export const companies = [
         },
       ],
       applicants: ["1", "2", "3", "4"],
-      vacancies: 25,
+      vacancies: 7,
       createdAt: new Date(),
       verified: true
     },
@@ -405,7 +450,7 @@ export const companies = [
         },
       ],
       applicants: ["1", "2", "3", "4"],
-      vacancies: 25,
+      vacancies: 5,
       createdAt: new Date(),
       verified: true
     },
@@ -434,7 +479,7 @@ export const companies = [
         },
       ],
       applicants: ["1", "2", "3", "4"],
-      vacancies: 25,
+      vacancies: 8,
       createdAt: new Date(),
       verified: false
     },
@@ -463,7 +508,7 @@ export const companies = [
         },
       ],
       applicants: ["1", "2", "3", "4"],
-      vacancies: 25,
+      vacancies: 6,
       createdAt: new Date(),
       verified: true
     },
@@ -492,7 +537,7 @@ export const companies = [
         },
       ],
       applicants: ["1", "2", "3", "4"],
-      vacancies: 25,
+      vacancies: 10,
       createdAt: new Date(),
       verified: true
     },

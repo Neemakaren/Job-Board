@@ -11,15 +11,16 @@ import { Link, useParams } from 'react-router-dom';
 const Featured = () => {
     
   return (
-    <section className='sm:flex sm:justify-between w-[1280px] sm:my-0 sm:mx-auto sm:mt-20 sm:sm:p-5 sm:mb-10  m'>
+    <section className='lg:px-[8em]'>
+        <section className='mt-12 md:flex md:justify-between md:my-0 md:mx-auto md:mt-20 md:md:p-5 md:mb-10'> 
         <section className='flex flex-col flex-start'>
-        <h4 className='font-bold mb-2'>FEATURED JOBS</h4>
+        <h4 className='font-bold mb-2 text-2xl'>FEATURED JOBS</h4>
         <p className='mb-4 text-[#a2a3a4] '>Leading Employers already using job and talent.</p>
-        <div className='flex flex-col mx-auto '>
+        <div className='flex flex-col mx-auto'>
             {
                 companies.map((items, _id) => {
                    return ( <div key={_id} className='flex gap-8 mb-4 py-6 px-10 shadow-lg cursor-pointer'>
-                        <img src={items.profileUrl} alt="" className='w-20' />
+                        <img src={items.profileUrl} alt="" className='w-14 lg:w-20' />
                         <p>{items.description}</p>
                         <p>{items.location}</p>
                         <Link to={`/companies/${items.id}`} className='text-[#55A747]'>more info</Link>
@@ -37,6 +38,7 @@ const Featured = () => {
             <img src={img} alt="" className=' mb-6'/>
             <img src={img1} alt="" className=' '/>
         </div>
+        </section>
         </section>
     </section>
   )

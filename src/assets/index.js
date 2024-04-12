@@ -13,6 +13,7 @@ import Facebook from "./facebook.png";
 import CodeWave from "./codewave.png";
 import image from './img-2.webp'
 
+
 export {
   CodeWave,
   NoProfile,

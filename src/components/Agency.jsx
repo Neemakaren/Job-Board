@@ -1,5 +1,6 @@
 import React from 'react'
-import img from '../assets/Job-Board-Images/logo1.jpg'
+import { labels } from '../utils/companies'
+
 
 const Agency = () => {
   return (
@@ -9,21 +10,11 @@ const Agency = () => {
             <p className='pl-4 text-[#5c5a5a]'>the world's leading digital Leading employaers already using joband talent</p>
         </div>
         <div className=' w-full grid grid-cols-4 items-center  sm:grid-cols-6 lg:grid-cols-6'>
-            <img src={img} alt="" className='items-center justify-center' />
-            <img src={img} alt="" />
-            <img src={img} alt="" />
-            <img src={img} alt="" />
-            <img src={img} alt="" />
-            <img src={img} alt="" />
-            <img src={img} alt="" />
-            <img src={img} alt="" />
-            <img src={img} alt="" />
-            <img src={img} alt="" />
-            <img src={img} alt="" />
-            <img src={img} alt="" />
-            <img src={img} alt="" />
-            <img src={img} alt="" />
-            <img src={img} alt="" />
+          {
+            labels.map((label, idx) => (
+              <img src={label.imgUrl} alt="" key={idx}/>
+            ))
+          }
         </div>
     </section>
   )

@@ -13,7 +13,7 @@ const JobFind = () => {
                  good job. Anyhow I took a look.</p>
         </div>
         <div className='lifestyle-img backdrop-blur-xl backdrop-brightness-150'>
-            <img src={img} alt="" className='image '/>
+            <img src={img} alt="" className='w-[100%] h-[100%] '/>
         </div>
 
     </section>

@@ -1,7 +1,7 @@
 import {useState} from 'react'
 import JobHero from '../components/JobHero'
 import JobMain from '../components/JobMain'
-import Footer from '../components/Footer'
+
 
 const JobSec = ({jobs}) => {
   const [search, setSearch] = useState('')
@@ -21,7 +21,6 @@ const JobSec = ({jobs}) => {
     <>
     <JobHero search={search} setSearch={setSearch} />
     <JobMain jobs={jobs} search={search} Vacancy={Vacancy} handleChange={handleChange}/>
-    {/* <Footer /> */}
     </>
   )
 }

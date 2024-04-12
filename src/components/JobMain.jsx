@@ -11,55 +11,9 @@ const JobMain = ({jobs, search, vacancy, handleChange}) => {
 
   
   return (
-    <section className='sm:flex sm:justify-between  w-[1280px] my-0 mx-auto sm:mt-20 sm:sm:p-5 sm:mb-10 m'>
+    <section className='px-[5em]'>
+      <section className=' sm:flex sm:justify-between my-0 mx-auto sm:mt-20 sm:sm:p-5 sm:mb-10'>
          <section className='flex border flex-col w-100 items-center justify-center sm:justify-start sm:w-80 '>
-        {/* <div className='sm:flex sm:flex-col sm:items-start sm:justify-start sm:w-60'>
-<div class="inline-flex items-center">
-  <label class="relative flex items-center p-3 rounded-full cursor-pointer" htmlFor="check">
-    <input type="checkbox"
-      id="check" />
-  </label>
-  <label class="mt-px font-light text-gray-700 cursor-pointer select-none" htmlFor="check">
-    Last Hour
-  </label>
-</div> 
-<div class="inline-flex items-center">
-  <label class="relative flex items-center p-3 rounded-full cursor-pointer" htmlFor="check">
-    <input type="checkbox"
-      id="check" />
-  </label>
-  <label class="mt-px font-light text-gray-700 cursor-pointer select-none" htmlFor="check">
-  Last 7 Days
-  </label>
-</div> 
-<div class="inline-flex items-center">
-  <label class="relative flex items-center p-3 rounded-full cursor-pointer" htmlFor="check">
-    <input type="checkbox"
-      id="check" />
-  </label>
-  <label class="mt-px font-light text-gray-700 cursor-pointer select-none" htmlFor="check">
-  Last 14 Days
-  </label>
-</div> 
-<div class="inline-flex items-center">
-  <label class="relative flex items-center p-3 rounded-full cursor-pointer" htmlFor="check">
-    <input type="checkbox"
-      id="check" />
-  </label>
-  <label class="mt-px font-light text-gray-700 cursor-pointer select-none" htmlFor="check">
-  Last 30 Days
-  </label>
-</div> 
-<div class="inline-flex items-center">
-  <label class="relative flex items-center p-3 rounded-full cursor-pointer" htmlFor="check">
-    <input type="checkbox"
-      id="check" />
-  </label>
-  <label class="mt-px font-light text-gray-700 cursor-pointer select-none" htmlFor="check">
-  All
-  </label>
-</div> 
-        </div> */}
         <h4 className='mt-6'>Vacancy Type</h4>
         <div className='sm:flex sm:flex-col sm:items-start sm:justify-start sm:w-60'>
 <div class="inline-flex items-center">
@@ -173,11 +127,11 @@ const JobMain = ({jobs, search, vacancy, handleChange}) => {
         <h4 className='font-bold mb-2 text-md mt-6'>{job.jobTitle}</h4>
         <div className='flex flex-col mb-4 gap-2 font-bold text-sm'>
         <span>Posted: {job.vacancies}</span>
-        <span>Specialism: Accountancy</span>       
+        <span>{job.company.email}</span>       
         <span>{job.location}</span> 
         </div>
         <div className='sm:flex'>
-        <p className='text-[#a2a3a4]'>{job.detail[0].desc}<span className='cursor-pointer text-[#55A747]'>Read More</span></p>  
+        <p className='text-[#a2a3a4]'>{job.detail[0].desc}</p>  
             <button className='mt-4 border border-[#55A747] py-2 px-6 h-10 pl-8 sm:mt-2 sm:ml-4'>{job.vacancy}</button>     
         </div>
             </div>    
@@ -187,6 +141,7 @@ const JobMain = ({jobs, search, vacancy, handleChange}) => {
         <Link to='/' className='bg-[#343232] text-white py-2 px-4 mt-2 mb-8 items-center justify-center flex'>Back To HomePage</Link>
        
         
+        </section>
         </section>
 
     </section>

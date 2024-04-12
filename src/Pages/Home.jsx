@@ -10,26 +10,23 @@ import JobFind from '../components/JobFind'
 import Blog from '../components/Blog'
 import Testimonials from '../components/Testimonials'
 import Agency from '../components/Agency'
-import Footer from '../components/Footer'
 
 
-const Home = ({categories, filterItems, jobs}) => {
+
+const Home = ({categories, filterItems, jobItems}) => {
+ 
   
   return (
     <>
-   {/* <Hero /> */}
-   <Navbar />
    <Hero2 />
-   <Search />
-   {/* <Jobs categories={categories} filterItems={filterItems} jobs={jobs} /> */}
+   {/* <Search /> */}
+   <Jobs categories={categories} filterItems={filterItems} jobItems={jobItems} />
    <Banner />
    <Featured/>
    <JobFind />
    <Blog />
    <Testimonials/>
    <Agency />
-   <Footer />
-   {/* <Here /> */}
     </>
   )
 }

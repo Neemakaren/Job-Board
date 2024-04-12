@@ -12,10 +12,10 @@ const DetailMain = ({filterItems}) => {
   const { productId } = useParams()
   const product = companies.find((product) => product.id === productId)
   const {name, location, about} = product
-  // console.log(name)
+
   return (
     <>
-    <section className='flex flex-col sm:flex-row  sm:flex sm:items-center sm:justify-center gap-10 mt-10 sm:px-20 my-0 mx-auto convo'>
+    <section className='flex flex-col sm:flex-row  sm:flex sm:items-center sm:justify-center gap-10 mt-10 sm:px-20 my-0 mx-auto'>
         <div className='flex justify-between px-6'>
         <img src={img} alt="" />
         <div className='flex flex-col items-center justify-center px-6 ml-10 '>
@@ -36,13 +36,10 @@ const DetailMain = ({filterItems}) => {
 
     </section>
 
-    <section className=' sm:flex sm:justify-between s my-0 mx-auto sm:mt-2 sm:p-5 sm:mb-10 m w-full grid grid-cols-1 gap-6 sm:grid-cols-2 sm:flex sm:flex-col lg:flex lg:flex-row lg:grid-cols-3 mt-2 p-6 lg:px-20'>
+    <section className='px-8 sm:flex sm:justify-between my-0 mx-auto sm:mt-2 sm:p-5 sm:mb-10 m w-full grid grid-cols-1 gap-6 sm:grid-cols-2 sm:flex sm:flex-col lg:flex lg:flex-row lg:grid-cols-3 mt-2 p-6 lg:px-20'>
         <section className='flex flex-col flex-start text-[#a2a3a4] m-10 p-10'>
-        <div className='flex flex-col mx-auto '>
+        <div className='flex flex-col mx-auto'>
           <h4 className='font-bold text-black'>Job Overview</h4>
-            {/* <p className='leading-8'>Far much that one rank beheld bluebird after outside ignobly allegedly more when oh arrogantly vehement irresistibly fussy penguin insect additionally wow absolutely crud meretriciously hastily dalmatian a glowered inset one echidna cassowary some parrot and much as goodness some froze the sullen much connected bat wonderfully on instantaneously eel valiantly petted this along across highhandedly much dog out the much alas evasively neutral lazy reset.
-            Repeatedly dreamed alas opossum but dramatically despite expeditiously that jeepers loosely yikes that as or eel underneath kept and slept compactly far purred sure abidingly up above fitting to strident wiped set waywardly far the and pangolin horse approving paid chuckled cassowary oh above a much opposite far much hypnotically more therefore wasp less that hey apart well like while superbly orca and far hence one.Far much that one rank beheld bluebird after outside ignobly allegedly more when oh arrogantly vehement irresistibly fussy penguin insect additionally wow absolutely crud meretriciously hastily dalmatian a glowered inset one echidna cassowary some parrot and much as goodness some froze the sullen much connected bat wonderfully on instantaneously eel valiantly petted this along across highhandedly much dog out the much alas evasively neutral lazy reset.
-            Repeatedly dreamed alas opossum but dramatically despite expeditiously that jeepers loosely yikes that as or eel underneath kept and slept compactly far purred sure abidingly up above fitting to strident wiped set waywardly far the and.</p> */}
             <p>{about}</p>
           <h4 className='font-bold text-black mt-10 mb-6'>Skills Required</h4>
             <p className='leading-8'>

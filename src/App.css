@@ -55,12 +55,11 @@
 }
 
 .here {
-  background-image: url(./assets/Job-Board-Images/key1.jpg);
-  /* border: 2px solid red; */
+  background-image: url(./assets/Job-Board-Images/img2.jpg);
 }
 
 .cont {
-  /* border: 2px solid red; */
+  border: 2px solid red;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -74,6 +73,7 @@
 
 .blog {
   background-image: url(./assets/Job-Board-Images/jobline-blog-12.jpg);
+  
 }
 
 .c {
@@ -95,10 +95,7 @@
   border: 2px solid red;
 }
 
-.m {
-  /* flex: 1; */
-  /* border: 5px solid green; */
-}
+
 
 .a {
   /* flex: 1; */
@@ -110,14 +107,6 @@
   z-index: 10;
 }
 
-/* .i {
-  width: 50px;
-} */
-
-/* .j {
-  display: flex;
-  
-} */
 
 .lifestyle {
   /* overflow: hidden; */
@@ -133,11 +122,6 @@
   background-repeat: no-repeat;
 }
 
-.image {
-  width: 100%;
-  height: 100%;
-  /* backdrop-filter: blur(64px); */
-}
 
 
 .lifestyle-content {
@@ -148,6 +132,7 @@
  padding: 20px 100px;
  /* margin-top: 50px; */
  background-color: rgb(246,246,246);
+ border: 6px solid red;
  
 }
 
@@ -213,8 +198,4 @@ a {
   color: hsl(205, 86%, 17%);
 }
 
-.convo {
-  border: 5px solid red;
-  /* width: 1280px; */
-}
 

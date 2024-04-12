@@ -9,7 +9,7 @@ const Faq = () => {
     </div>
   </section>
 
-    <section className='w-[1280px] my-0 mx-auto px-4'>
+    <section className='px-6 my-0 mx-auto lg:px-[10em]'>
         <div>
             <h4 className='text-2xl my-8 font-bold text=[#CE9F75]'>FREQUENTLY ASKED QUESTIONS</h4>
             <p className='leading-7 text-[#757575]'> Website uses cookies to monitor browsing preferences. If you do allow cookies to be used, the following personal information.Your use of any information or materials on this website is entirely at your own risk, for which we shall not be liable. It shall be your own responsibility to ensure that any products, services or information available through this website meet your specific requirements.
