@@ -1,5 +1,4 @@
 import {useState} from 'react'
-// import img from '../assets/Job-Board-Images/Testimonial1.jpg'
 import people from '../utils/data'
 import { FaChevronLeft, FaChevronRight, FaQuoteRight } from 'react-icons/fa';
 
@@ -50,7 +49,7 @@ const Testimonials = () => {
          <div className="flex flex-col justify-center items-center py-6 px-4 w-100 shadow-lg text-white backdrop-blur-md bg-black/80 w-full h-full">
           {/* <h4>Testimonials</h4> */}
           <img src={image} alt="profile" className='p mb-6' />
-          <p className='mb-6 w-50'>{text} </p>
+          <p className='mb-6 w-50 text-center'>{text} </p>
             <span className='mb-2'>{name}</span>
             <div className='button-container'>
         <button className='prev-btn cursor-pointer' onClick={prevPerson}>

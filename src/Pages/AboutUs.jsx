@@ -4,7 +4,7 @@ import img from '../assets/Job-Board-Images/about-map.jpg'
 const AboutUs = () => {
   return (
     <>
-    <section className='w-full h-60 bg-cover bg-center flex  mt-8 shadow-lg bg-black-800 bg-opacity-100 mt-20 here'>
+    <section className='w-full h-60 bg-cover bg-center flex  mt-8 shadow-lg bg-black-800 bg-opacity-100 here'>
       <div className="py-6 px-4 font-bold w-100 text-white backdrop-blur-md bg-black/80 w-full h-full">
         <div className='flex flex-col justify-center items-center mt-8 py-6 my-0 mx-auto'>
       <h4 className='text-2xl'>ABOUT US</h4>
@@ -51,7 +51,7 @@ const AboutUs = () => {
       </div>
     </section>
 
-    <section className=' grid-cols-1 md:grid md:grid-cols-2  my-0 mx-auto my-8 p-4 lg:px-20'>
+    <section className=' grid-cols-1 md:grid md:grid-cols-2 mx-auto my-8 p-4 lg:px-20'>
         <div className='flex flex-col py-4 sm:py-20 px-6 sm:px-20  space-y-4'>
             <h5 className='text-2xl text-bold font-bold mb-4 '>ABOUT JOB CAREER</h5>
             <p className='font-bold '>Every single one of our jobs has some kind of flexibility option - 

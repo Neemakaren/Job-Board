@@ -14,13 +14,17 @@ import {Home,
         JobSec
       } from './Pages'
 
-
+     
+      
 const allCategories = ['all', ...new Set(jobs.map((item) => item.jobTitle))];
+
 
 
 function App() {
   const [jobItems, setJobItems] = useState(jobs);
   const [categories, setCategories] = useState(allCategories);
+
+  console.log(typeof(jobItems))
  
 
   const filterItems = (category) => {
@@ -32,9 +36,6 @@ function App() {
     setJobItems(newItems); 
   }
 
- 
-
-  
   
   return (
     <>
@@ -46,7 +47,7 @@ function App() {
       <Route index element={<Home />}/>
       <Route path=':productId' element={<JobDetail />}/>
       </Route> 
-    <Route path='/jobdetail' element={<JobDetail/>}  />
+    {/* <Route path='/jobdetail' element={<JobDetail/>}  /> */}
     <Route path='/jobsec' element={<JobSec jobs={jobItems} />} />
     <Route path='/aboutus' element={<AboutUs />} />
     <Route path='/uploadjob' element={<UploadJob />}></Route>

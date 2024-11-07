@@ -244,12 +244,6 @@ export const companies = [
 
 
 
-
-
-
-
-
-  
   export const jobs = [
     {
       id: "1",

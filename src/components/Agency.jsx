@@ -4,7 +4,7 @@ import { labels } from '../utils/companies'
 
 const Agency = () => {
   return (
-    <section className=' my-0 mx-auto lg:px-40  mt-10'>
+    <section className='mx-auto container mt-10'>
         <div className='flex flex-col justify-center items-center'>
             <h4 className='font-bold text-2xl p-2'>AGENCIES AND IN HOUSE TEAMS</h4>
             <p className='pl-4 text-[#5c5a5a]'>the world's leading digital Leading employaers already using joband talent</p>

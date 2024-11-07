@@ -11,7 +11,7 @@ import { Link, useParams } from 'react-router-dom';
 const Featured = () => {
     
   return (
-    <section className='lg:px-[8em]'>
+    <section className='container my-0 mx-auto select-none'>
         <section className='mt-12 md:flex md:justify-between md:my-0 md:mx-auto md:mt-20 md:md:p-5 md:mb-10'> 
         <section className='flex flex-col flex-start'>
         <h4 className='font-bold mb-2 text-2xl'>FEATURED JOBS</h4>

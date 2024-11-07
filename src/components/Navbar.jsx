@@ -31,13 +31,13 @@ const Navbar = () => {
       </div>
       
       <div className="hidden space-x-6 md:flex">
-        <Link to='/' className="hover:text-darkGrayishBlue">Home</Link>
-        <Link to='/jobsec' className="hover:text-darkGrayishBlue">Jobs</Link>
-        <Link to='/uploadjob' className="hover:text-darkGrayishBlue">UploadJob</Link>
-        <Link to='/blogpage'className="hover:text-darkGrayishBlue" >Blog</Link>
-        <Link to='/aboutus' className="hover:text-darkGrayishBlue">AboutUs</Link>
-        <Link to='/terms' className="hover:text-darkGrayishBlue">Terms</Link>
-        <Link to='faq' className="hover:text-darkGrayishBlue">Faq</Link>
+        <Link to='/' className="hover:text-[#55A747]">Home</Link>
+        <Link to='/jobsec' className="hover:text-[#55A747]">Jobs</Link>
+        <Link to='/uploadjob' className="hover:text-[#55A747]">UploadJob</Link>
+        <Link to='/blogpage' className="hover:text-[#55A747]">Blog</Link>
+        <Link to='/aboutus' className="hover:text-[#55A747]">AboutUs</Link>
+        <Link to='/terms' className="hover:text-[#55A747]">Terms</Link>
+        <Link to='faq' className="hover:text-[#55A747]">Faq</Link>
       </div>
       
       <button className='flex flex-row items-center justify-center text-2xl cursor-pointer transition-all duration-0.3 linear md:hidden  lg:hidden text-slate-900 ' onClick={() => setIsOpen((prev) => !prev)}>

@@ -12,10 +12,10 @@ const Jobs = ({filterItems, categories}) => {
   
   return (
     
-    <section className='container mx-auto mt-10 mb-20 flex flex-col justify-center items-center gap-3 2xl:gap-10 md:px-5 py-0 md:py-6 bg-[#F5F6F8] shadow-lg'>
+    <section className='container mx-auto mt-10 mb-20 flex flex-col justify-center items-center gap-3 px-3 2xl:gap-10 md:px-5 py-0 md:py-6 bg-[#F5F6F8] shadow-lg'>
         <h4 className='mt-4'>BROWSE JOBS BY SPECIALISMS </h4>
         <p>{categories.length} jobs live - 0 added today.</p>
-        <section className='w-full grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 mt-4 '>{
+        <section className='w-full grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 mt-4'>{
           categories.map((item, index) => (
             <Link to={`/jobsec`}>
             <section className='' key={index} onClick={() => filterItems(item)}>

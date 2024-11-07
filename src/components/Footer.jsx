@@ -3,7 +3,7 @@ import { FaTwitter, FaFacebook, FaInstagram, FaYoutube } from 'react-icons/fa'
 
 const Footer = () => {
   return (
-    <footer className='w-full bg-[#333333] text-[#7e7b7b] grid grid-cols-1 items-center sm:grid-cols-2 lg:grid-cols-3 mt-4 sm:pt-8 sm:pb-8'>
+    <footer className=' bg-[#333333] text-[#7e7b7b] grid grid-cols-1 items-center sm:grid-cols-2 lg:grid-cols-3 mt-4 sm:pt-8 sm:pb-8'>
         <div className='flex flex-col mx-4 my-6 w-80  sm:pl-10 '>
             <h4 className='mb-2 text-white'>NEWSLETTER</h4>
             <p className='mb-4'>Subscribe to Jobcareer Pacific 

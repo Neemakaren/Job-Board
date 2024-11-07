@@ -4,18 +4,19 @@ import { FaTwitter, FaFacebook, FaInstagram, FaYoutube } from 'react-icons/fa'
 import {companies} from '../utils/companies';
 import img1 from '../assets/Job-Board-Images/emp1.png'
 import { Link, useParams } from 'react-router-dom';
+import Convert from './Convert';
 
 
 
 
 const DetailMain = ({filterItems}) => {
   const { productId } = useParams()
-  const product = companies.find((product) => product.id === productId)
+  const product = companies.find((p) => p.id === productId)
   const {name, location, about} = product
 
   return (
     <>
-    <section className='flex flex-col sm:flex-row  sm:flex sm:items-center sm:justify-center gap-10 mt-10 sm:px-20 my-0 mx-auto'>
+    <section className='flex flex-col px-4 sm:flex-row  sm:flex sm:items-center sm:justify-center mt-10 container my-0 mx-auto'>
         <div className='flex justify-between px-6'>
         <img src={img} alt="" />
         <div className='flex flex-col items-center justify-center px-6 ml-10 '>
@@ -36,8 +37,8 @@ const DetailMain = ({filterItems}) => {
 
     </section>
 
-    <section className='px-8 sm:flex sm:justify-between my-0 mx-auto sm:mt-2 sm:p-5 sm:mb-10 m w-full grid grid-cols-1 gap-6 sm:grid-cols-2 sm:flex sm:flex-col lg:flex lg:flex-row lg:grid-cols-3 mt-2 p-6 lg:px-20'>
-        <section className='flex flex-col flex-start text-[#a2a3a4] m-10 p-10'>
+    <section className='px-4 sm:flex sm:justify-between my-0 mx-auto sm:mt-2 sm:p-5 sm:mb-10 m w-full grid grid-cols-1 gap-6 sm:grid-cols-2 sm:flex-col lg:flex lg:flex-row lg:grid-cols-3 mt-2 p-2 container'>
+        <section className='flex flex-col flex-start text-[#a2a3a4] m-2 p-10'>
         <div className='flex flex-col mx-auto'>
           <h4 className='font-bold text-black'>Job Overview</h4>
             <p>{about}</p>
@@ -53,6 +54,7 @@ const DetailMain = ({filterItems}) => {
             </p>
 
         </div>
+        <Convert />
             <Link to='/' className='flex items-center justify-center p-2 mt-4 border border-[#55A747]'>Back Home</Link>
         </section>
         <section className='flex flex-col w-100 items-center justify-center lg:mt-20 sm:justify-start sm:w-80'>
@@ -90,6 +92,7 @@ const DetailMain = ({filterItems}) => {
             <img src={img1} alt="" className=' '/>
         </div>
         </section> */}
+        
     </section>
     </>
   )

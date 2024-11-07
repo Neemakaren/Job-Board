@@ -11,9 +11,9 @@ const JobMain = ({jobs, search, vacancy, handleChange}) => {
 
   
   return (
-    <section className='px-[5em]'>
-      <section className=' sm:flex sm:justify-between my-0 mx-auto sm:mt-20 sm:sm:p-5 sm:mb-10'>
-         <section className='flex border flex-col w-100 items-center justify-center sm:justify-start sm:w-80 '>
+    <section className=' container my-0 mx-auto flex flex-col'>
+      <section className='md:flex-col sm:flex my-0 mx-auto sm:mt-20 sm:sm:p-5 sm:mb-10 lg:flex-row'>
+         <section className='flex border flex-col w-100 items-center justify-center sm:justify-start sm:w-80 md:flex-row lg:flex-col h h-80'>
         <h4 className='mt-6'>Vacancy Type</h4>
         <div className='sm:flex sm:flex-col sm:items-start sm:justify-start sm:w-60'>
 <div class="inline-flex items-center">
@@ -112,7 +112,9 @@ const JobMain = ({jobs, search, vacancy, handleChange}) => {
         </div>
         </section>
 
-        <section className='sm:flex sm:flex-col sm:flex-start border-bottom'>
+        {/* <section className='sm:flex sm:flex-col sm:flex-start border-bottom'> */}
+        {/* <section className='flex flex-col flex-start sm:flex sm:flex-col border-bottom container h'> */}
+        <section className='flex flex-col sm:flex sm:flex-col border-bottom px-5'>
         {
           jobs.filter((val) => {
             if(search === '') {
@@ -121,8 +123,8 @@ const JobMain = ({jobs, search, vacancy, handleChange}) => {
               return val
             }
           }).map((job, index) => (
-            <div key={index} className='p-4 sm:flex sm:items-center sm:justify-center'>
-            <img src={img} alt="" />
+            <div key={index} className='container sm:flex sm:items-center sm:justify-center'>
+            <img src={img} alt="" className='w-fit flex ' />
             <div className='flex flex-col'>
         <h4 className='font-bold mb-2 text-md mt-6'>{job.jobTitle}</h4>
         <div className='flex flex-col mb-4 gap-2 font-bold text-sm'>
@@ -148,7 +150,7 @@ const JobMain = ({jobs, search, vacancy, handleChange}) => {
   )
 }
 
-export default JobMain
+export default JobMain;
 
 {/* <div className='flex items-center justify-center'>
             <img src={img} alt="" />
