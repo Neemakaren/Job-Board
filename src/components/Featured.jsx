@@ -7,9 +7,9 @@ import { Link, useParams } from 'react-router-dom';
 
 
 
+const Featured = ({valid}) => {
 
-const Featured = () => {
-    
+  
   return (
     <section className='container my-0 mx-auto select-none'>
         <section className='mt-12 md:flex md:justify-between md:my-0 md:mx-auto md:mt-20 md:md:p-5 md:mb-10'> 
@@ -17,11 +17,13 @@ const Featured = () => {
         <h4 className='font-bold mb-2 text-2xl'>FEATURED JOBS</h4>
         <p className='mb-4 text-[#a2a3a4] '>Leading Employers already using job and talent.</p>
         <div className='flex flex-col mx-auto'>
+           
             {
-                companies.map((items, _id) => {
+                valid.map((items, _id) => {
                    return ( <div key={_id} className='flex gap-8 mb-4 py-6 px-10 shadow-lg cursor-pointer'>
-                        <img src={items.profileUrl} alt="" className='w-14 lg:w-20' />
-                        <p>{items.description}</p>
+                        <img src={items.image} alt="" className='w-14 lg:w-20' />
+                        <p>{items.company}</p>
+                        <p>{items.title}</p>
                         <p>{items.location}</p>
                         <Link to={`/companies/${items.id}`} className='text-[#55A747]'>more info</Link>
                     </div>

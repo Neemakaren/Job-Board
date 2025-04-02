@@ -1,34 +1,36 @@
-import Navbar from '../components/Navbar'
-import Hero from '../components/Hero'
-import Search from '../components/Search'
-import Hero2 from '../components/Hero2'
-import Jobs from '../components/Jobs'
-import Here from '../components/Here'
-import Banner from '../components/Banner'
-import Featured from '../components/Featured'
-import JobFind from '../components/JobFind'
-import Blog from '../components/Blog'
-import Testimonials from '../components/Testimonials'
-import Agency from '../components/Agency'
+import React from "react";
+import {
+  Hero2,
+  JobFind,
+  Jobs,
+  Banner,
+  Featured,
+  Blog,
+  Testimonials,
+  Agency,
+} from "../components";
 
+import Search from "../components/Search";
 
-
-const Home = ({categories, filterItems, jobItems}) => {
- 
-  
+const Home = ({ categories, filterItems, jobItems, valid }) => {
   return (
     <>
-   <Hero2 />
-   {/* <Search /> */}
-   <Jobs categories={categories} filterItems={filterItems} jobItems={jobItems} />
-   <Banner />
-   <Featured/>
-   <JobFind />
-   <Blog />
-   <Testimonials/>
-   <Agency />
-    </>
-  )
-}
+      <Hero2 />
 
-export default Home
+      {/* <Search /> */}
+      <Jobs
+        categories={categories}
+        filterItems={filterItems}
+        jobItems={jobItems}
+      />
+      <Banner />
+      <Featured valid={valid} />
+      <JobFind />
+      <Blog />
+      <Testimonials />
+      <Agency />
+    </>
+  );
+};
+
+export default Home;

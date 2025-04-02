@@ -7,7 +7,7 @@ const JobHero = ({search, setSearch}) => {
     <section className="w-full h-96 bg-cover bg-center flex justify-center items-center mt-3 relative here">
         <div className="flex flex-col justify-center items-center backdrop-blur-md bg-black/60 w-full h-full pt-8 pb-8 ">
         <h4 className='flex flex-row font-bold text-2xl s mx-4 my-6 text-white'>EXPLORE THOUSAND OF JOBS WITH JUST SIMPLE SEARCH...</h4>
-        <form action="" className='w-[1280px] my-0 mx-auto flex flex-col w-full px-4 sm:items-center sm:justify-center sm:flex sm:flex-row'>
+        <form action="" className='w-[1280px] my-0 mx-auto flex flex-col px-4 sm:items-center sm:justify-center sm:flex sm:flex-row'>
             <div className='flex flex-col'>
             <input 
               type="text" 

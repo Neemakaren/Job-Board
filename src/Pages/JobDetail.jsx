@@ -2,11 +2,11 @@ import React from 'react'
 import DetailHero from '../components/DetailHero'
 import DetailMain from '../components/DetailMain'
 
-const JobDetail = () => {
+const JobDetail = ({valid}) => {
   return (
     <>
-    <DetailHero />
-    <DetailMain/>
+    <DetailHero valid={valid}/>
+    <DetailMain valid={valid}/>
     </>
   )
 }

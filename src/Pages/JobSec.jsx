@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import React, {useState} from 'react'
 import JobHero from '../components/JobHero'
 import JobMain from '../components/JobMain'
 

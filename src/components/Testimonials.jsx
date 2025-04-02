@@ -52,10 +52,10 @@ const Testimonials = () => {
           <p className='mb-6 w-50 text-center'>{text} </p>
             <span className='mb-2'>{name}</span>
             <div className='button-container'>
-        <button className='prev-btn cursor-pointer' onClick={prevPerson}>
+        <button className='prev-btn cursor-pointer duration-300' onClick={prevPerson}>
           <FaChevronLeft />
         </button>
-        <button className='next-btn' onClick={nextPerson}>
+        <button className='next-btn duration-300' onClick={nextPerson}>
           <FaChevronRight />
         </button>
       </div>

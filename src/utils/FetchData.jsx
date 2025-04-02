@@ -1,27 +1,45 @@
+const url = 'https://jobs-api14.p.rapidapi.com/salary/getJobTitles?query=web%20developer&countryCode=US';
+const options = {
+	method: 'GET',
+	headers: {
+		'x-rapidapi-key': 'c0bac2aea6msh108d8db2cdd60ecp1afc8cjsnf227e55c4123',
+		'x-rapidapi-host': 'jobs-api14.p.rapidapi.com'
+	}
+};
 
+try {
+	const response = await fetch(url, options);
+	const result = await response.text();
+	console.log(result, 'here');
+} catch (error) {
+	console.error(error);
+}
 
-export const exerciseOptions = {
-    method: 'GET',
-    headers: {
-      // 'X-RapidAPI-Host': 'exercisedb.p.rapidapi.com',
-      "X-RapidAPI-Host": "jsearch.p.rapidapi.com",
-      'X-RapidAPI-Key': "c0bac2aea6msh108d8db2cdd60ecp1afc8cjsnf227e55c4123",
-    },
-  };
+export const jobOptions = {
 
-// export const youtubeOptions = {
-// method: 'GET',
-// headers: {
-//   'X-RapidAPI-Host': 'youtube-search-and-download.p.rapidapi.com',
-//   'X-RapidAPI-Key': 'f0021db587msh781fb1cbef39856p11c183jsn45521d5d1c85',
-// },
-// };
+}
 
 export const fetchData = async (url, options) => {
-const res = await fetch(url, options);
-const data = await res.json();
+  const res = await fetch(url, options);
+  const data = await res.json();
 
-return data;
+  return data;
 };
 
 
+const url = 'https://jobs-api14.p.rapidapi.com/v2/list?query=Web%20Developer&location=United%20States&autoTranslateLocation=false&remoteOnly=false&employmentTypes=fulltime%3Bparttime%3Bintern%3Bcontractor';
+const options = {
+	method: 'GET',
+	headers: {
+		'x-rapidapi-key': 'c0bac2aea6msh108d8db2cdd60ecp1afc8cjsnf227e55c4123',
+		'x-rapidapi-host': 'jobs-api14.p.rapidapi.com'
+	}
+};
+
+try {
+	const response = await fetch(url, options);
+	const result = await response.text();
+	console.log(result);
+} catch (error) {
+	console.error(error);
+}
