@@ -16,7 +16,7 @@ A responsive job board application built with React.js. The app simulates a real
 
 📸 Screenshots
 
-(Add screenshots of your app here — home page, job listing page, job details page, etc.)
+![img-3](https://github.com/user-attachments/assets/d41d8bea-395c-4081-8222-4a4aecbe429f)
 
 🔗 Live Demo
 
